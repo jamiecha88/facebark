@@ -26,7 +26,7 @@ const Navbar = () => {
               <button className="w-full text-gray-600/60 pl-2">Add guests</button>
           </div>
 
-          <div className="bg-[#ff5a5f] p-2 rounded-full mr-2 ">
+          <div className="bg-[#ff5a5f] p-2 rounded-full mr-2 hover:bg-[#ff3f46] duration-150 ease-in-out">
               <FiSearch className="text-white w-full "/>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className="">EN</div>
           </div>
 
-          <div className="flex items-center border px-3 py-2 rounded-full gap-2 bg-[#ff5a5f] text-white font-bold shadow-lg shadow-gray-300 hover:bg-[#ff7e83] duration-100 ease-out">
+          <div className="flex items-center border px-3 py-2 rounded-full gap-2 bg-[#ff5a5f] text-white font-bold shadow-lg shadow-gray-300 hover:bg-[#ff3f46] duration-150 ease-in-out">
               <p>Sign In</p>
               <BiUser className="text-[20px]"/>
           </div>

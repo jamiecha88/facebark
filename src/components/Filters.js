@@ -13,15 +13,15 @@ const Filters = () => {
     { title: "Trending", icon: <SlFire /> },
     { title: "New", icon: <HiOutlineKey /> },
     { title: "Play", icon: <IoGolfOutline /> },
-    { title: "Bed & Breakfast", icon: <TbCoffee /> },
-    { title: "Top of the World", icon: <TbMountain /> },
+    { title: "Guesthouse", icon: <TbCoffee /> },
     { title: "Arctic", icon: <TbSnowflake /> },
-    { title: "Adapted", icon: <BiHandicap /> },
-    { title: "Beach", icon: <MdOutlineBeachAccess /> },
     { title: "National Parks", icon: <MdOutlineForest /> },
+    { title: "Adapted", icon: <BiHandicap /> },
+    { title: "Mountains", icon: <TbMountain /> },
+    { title: "Beach", icon: <MdOutlineBeachAccess /> },
 ];
   return (
-    <div className="text-center sm:mx-6 md:mx-10 lg:mx-12">
+    <div className="text-center no-underline my-6 sm:mx-6 md:mx-10 lg:mx-10">
       <div className="flex justify-between gap-4 ">
         {sorting.map((object) => (
           <Filter title={object.title} icon={object.icon}/>
