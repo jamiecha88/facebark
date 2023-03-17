@@ -7,7 +7,7 @@ function App() {
       <Navbar />
       {/*Filters */}
       <Filters />
-      {/*Renetals }
+      {/*Rentals }
       {/*Footer */}
     </div>
   );
