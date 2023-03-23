@@ -1,5 +1,5 @@
-import Navbar from "./src/components/Navbar";
-import Filters from "./src/components/Filters";
+import Navbar from "../src/components/Navbar";
+import Filters from "../src/components/Filters";
 
 function App() {
   return (
