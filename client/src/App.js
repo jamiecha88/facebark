@@ -1,13 +1,16 @@
-import Navbar from "../src/components/Navbar";
-import Filters from "../src/components/Filters";
+/* eslint-disable no-unused-vars */
+//App.js is the Homepage of app (welcome user, signin/register)
+
+import * as React from 'react';
+import Homepage from "../src/pages/Homepage"
+import Header from "../src/components/Header";
 
 function App() {
   return (
     <div className="">
-      <Navbar />
-      <Filters />
-      {/*Rentals }
-      {/*Footer */}
+      <Homepage />
+      {/*Navbar*/}
+      {/*Footer*/}
     </div>
   );
 }
