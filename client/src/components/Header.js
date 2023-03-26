@@ -1,67 +1,86 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import GlobalStyles from '@mui/material/GlobalStyles';
 import Link from '@mui/material/Link';
+import Button from '@mui/material/Button';
+
 //import logo from '../assets/facebark logo_transparent_side.png'
 
-function Header(props) {
-  const { sections, title } = props;
+//const pages = ['About', 'Contact', 'Features'];
+const theme = createTheme();
 
+export default function Header(props) {
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">facebark</Button>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          sx={{ flex: 1 }}
-        >
-          {title}
-        </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
-        </Button>
-      </Toolbar>
-      <Toolbar
-        component="nav"
-        variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
-      >
-        {sections.map((section) => (
-          <Link
-            color="inherit"
-            noWrap
-            key={section.title}
-            variant="body2"
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
+      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+
+        <ThemeProvider theme={theme}>
+          <AppBar
+            position="fixed"
+            elevation={0}
+            sx={{
+              borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
+              backgroundColor: 'transparent',
+              color: '#063970'
+            }}
           >
-            {section.title}
-          </Link>
-        ))}
-      </Toolbar>
+            <Container maxWidth="xl">
+            <Toolbar disableGutters sx={{ flexWrap: 'wrap' }}>
+              <Typography
+                variant="h6"
+                noWrap
+                //component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  display: { xs: 'none', md: 'flex' },
+                  flexGrow: 1,
+                  fontWeight: 400,
+                  fontFamily: 'Roboto'
+                }}
+              >facebark
+              </Typography>
+              <nav>
+            <Link
+              variant="button"
+              color="inherit"
+              href="#"
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+            >
+              About
+            </Link>
+            <Link
+              variant="button"
+              color="inherit"
+              href="#"
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+            >
+              Contact
+            </Link>
+            <Link
+              variant="button"
+              color="inherit"
+              href="#"
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+            >
+              Features
+            </Link>
+          </nav>
+          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+            Login
+          </Button>
+
+            </Toolbar>
+            </Container>
+          </AppBar>
+        </ThemeProvider>
     </React.Fragment>
   );
 }
 
-Header.propTypes = {
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-  title: PropTypes.string.isRequired,
-};
 
-export default Header;
+
