@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 //App.js is the Homepage of app (welcome user, signin/register)
 
 import * as React from 'react';
