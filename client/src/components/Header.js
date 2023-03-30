@@ -7,8 +7,7 @@ import Typography from '@mui/material/Typography';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
-
-//import logo from '../assets/facebark logo_transparent_side.png'
+import Logo from '../assets/facebark logo_transparent_side.png'
 
 //const pages = ['About', 'Contact', 'Features'];
 const theme = createTheme();
@@ -30,6 +29,14 @@ export default function Header(props) {
           >
             <Container maxWidth="xl">
             <Toolbar disableGutters sx={{ flexWrap: 'wrap' }}>
+              <img src={Logo} alt="Logo"
+                style={{
+                  display: 'flex',
+                  height: '50px',
+                  marginRight: '10px',
+                  justifyContent: 'space-between',
+                  padding: '4px 8px'
+                }}/>
               <Typography
                 variant="h6"
                 noWrap
@@ -42,7 +49,7 @@ export default function Header(props) {
                   fontWeight: 400,
                   fontFamily: 'Roboto'
                 }}
-              >facebark
+              >
               </Typography>
               <nav>
             <Link
