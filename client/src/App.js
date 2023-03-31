@@ -7,8 +7,6 @@ export default function App() {
   return (
     <div className="">
       <Homepage />
-
-      {/*Footer*/}
     </div>
   );
 }

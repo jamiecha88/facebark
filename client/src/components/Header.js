@@ -56,7 +56,7 @@ export default function Header(props) {
               variant="button"
               color="inherit"
               href="#"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none', fontSize: '14px' }}
             >
               About
             </Link>
@@ -64,7 +64,7 @@ export default function Header(props) {
               variant="button"
               color="inherit"
               href="#"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none', fontSize: '14px' }}
             >
               Contact
             </Link>
@@ -72,7 +72,7 @@ export default function Header(props) {
               variant="button"
               color="inherit"
               href="#"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none' }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none", textTransform: 'none', fontSize: '14px' }}
             >
               Features
             </Link>
