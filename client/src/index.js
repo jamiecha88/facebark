@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import './index.css';
 import App from './App';
@@ -12,10 +13,12 @@ import '@fontsource/roboto/700.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
-      <CssBaseline />
-      <App />
-    </>
+    <Router>
+      <>
+        <CssBaseline />
+        <App />
+      </>
+    </Router>
   </React.StrictMode>
 );
 
