@@ -10,7 +10,16 @@ import Button from '@mui/material/Button';
 import Logo from '../assets/facebark logo_transparent_side.png'
 
 //const pages = ['About', 'Contact', 'Features'];
-const theme = createTheme();
+const theme = createTheme(
+  {palette: {
+    primary: {
+      main: '#063970',
+    },
+    secondary: {
+      main: '#171615',
+    },
+  }
+});
 
 export default function Header(props) {
   return (
@@ -77,7 +86,7 @@ export default function Header(props) {
               Features
             </Link>
           </nav>
-          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5, color: 'primary.main' }}>
             Login
           </Button>
 

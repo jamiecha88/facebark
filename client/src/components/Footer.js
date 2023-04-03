@@ -18,7 +18,7 @@ export default function Footer() {
               py: 3,
               px: 2,
               mt: 'auto',
-              backgroundColor: '#ffd9aa',
+              backgroundColor: '#edf5fe',
               position: 'fixed',
               bottom: 0,
               left: 0,
@@ -26,7 +26,7 @@ export default function Footer() {
             }}
           >
             <Container >
-              <Typography variant="body1" color="#000000">
+              <Typography variant="body1" color="#04264b">
                 © 2023 facebark. All rights reserved.
               </Typography>
             </Container>
