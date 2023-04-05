@@ -4,6 +4,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Social from "../components/Socials"
 
 const theme = createTheme();
 
@@ -31,6 +32,7 @@ export default function Footer() {
               </Typography>
             </Container>
           </Box>
+          <Social/>
         </ThemeProvider>
     </React.Fragment>
   );
