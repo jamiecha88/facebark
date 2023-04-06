@@ -32,7 +32,17 @@ export default function Footer() {
               </Typography>
             </Container>
           </Box>
-          <Socials/>
+          <Box sx={{
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            width: '100vw',
+            bgcolor: '#edf5fe'
+            }}>
+            <Container>
+              <Socials />
+            </Container>
+          </Box>
         </ThemeProvider>
     </React.Fragment>
   );

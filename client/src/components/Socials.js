@@ -1,8 +1,8 @@
-import { styled } from "tss-react/mui";
+import { styled } from "@mui/material/styles";
 import { Grid } from "@mui/material";
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import HomeIcon from '@mui/icons-material/Home';
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import HomeIcon from "@mui/icons-material/Home";
 
 const socialMedia = {
   twitter: "https://twitter.com/jamiecha88",
@@ -11,61 +11,71 @@ const socialMedia = {
 };
 
 const SnsIcon = styled("div")(({ theme }) => ({
-  width: "30px",
-  height: "30px",
+  width: "20px",
+  height: "20px",
+  backgroundColor: "transparent",
 
   [theme.breakpoints.down("xs")]: {
     width: "25px",
     height: "25px",
-  },
-  "&:hover": {
-    color: theme.palette.info.main,
-  },
+  }
+}));
+
+const SocialGrid = styled(Grid)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  maxWidth: "200px",
+  backgroundColor: "blue",
+  margin: "auto",
 }));
 
 export default function Social({ color }) {
   const { github, twitter, homepage } = socialMedia;
   return (
-    <Grid item container spacing={2} justifyContent="center">
+    <SocialGrid item container spacing={2} >
       <Grid
         item
-        component={"a"}
+        component={"snsIcon"}
         target="_blank"
         rel="noreferrer noopener"
         href={homepage}
+
       >
         <SnsIcon
-          color={color ? "primary" : "secondary"}
-          sx={{ color: "inherit" }}
+          color={"#040A4A"}
+          sx={{ color: "#040A4A"}}
         >
-          <HomeIcon />
+        <HomeIcon />
         </SnsIcon>
       </Grid>
       <Grid
         item
-        component={"a"}
+        component={"snsIcon"}
         target="_blank"
         rel="noreferrer noopener"
         href={github}
       >
         <SnsIcon
-          color={color ? "primary" : "secondary"}
-          sx={{ color: "inherit" }}
+          sx={{ color: "#040A4A" }}
         >
           <GitHubIcon />
         </SnsIcon>
       </Grid>
       <Grid
         item
-        component={"a"}
+        component={"snsIcon"}
         target="_blank"
         rel="noreferrer noopener"
         href={twitter}
       >
-        <SnsIcon>
+        <SnsIcon
+          color={"#040A4A"}
+          sx={{ color: "#040A4A"
+          }}>
           <TwitterIcon />
         </SnsIcon>
       </Grid>
-    </Grid>
+    </SocialGrid>
+
   );
 }
