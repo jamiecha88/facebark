@@ -3,7 +3,7 @@
 
 A social media app that lets you connect with other doggos in the neighborhood
 
-![App Screenshot](https://github.com/jamiecha88/facebark/blob/main/client/src/assets/facebark%20logo.png?raw=true)
+<img src="client/src/assets/facebark logo.png" alt="logo" style="display:block; margin:auto;">
 
 
 ## Features
