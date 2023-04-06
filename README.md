@@ -1,4 +1,5 @@
 
+<h1 align="center">facebark</h1>
 <p align="center"><img src="client/src/assets/facebark logo.png" alt="logo" style="display:block; margin:auto;"></p>
 
 ## Features
