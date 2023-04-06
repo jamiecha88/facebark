@@ -1,20 +1,15 @@
 
-# facebark
-
-A social media app that lets you connect with other doggos in the neighborhood
-
+<h1 align="center">facebark</h1>
 <p align="center">
-    <img src="client/src/assets/facebark logo.png" alt="logo" style="display:block; margin:auto;">
+A social media app that lets you connect with other doggos in the neighborhood
+<img src="client/src/assets/facebark logo.png" alt="logo" style="display:block; margin:auto;">
 </p>
-
-
 
 ## Features
 
 - Schedule events and sync calendars
 - Discover nearby dogs via location on map
 - Filter playdate options by breed, age, energy levels, etc.
-
 
 ## Tech Stack
 
