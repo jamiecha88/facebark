@@ -7,13 +7,13 @@ import Typography from '@mui/material/Typography'
 import GlobalStyles from '@mui/material/GlobalStyles'
 import Link from '@mui/material/Link'
 import Button from '@mui/material/Button'
-import Logo from '../assets/facebark logo_transparent_side.png'
+import Logo from '../assets/output-onlinepngtools.png'
 
 //const pages = ['About', 'Contact', 'Features'];
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#063970',
+      main: '#042140',
     },
     secondary: {
       main: '#171615',
@@ -34,8 +34,8 @@ export default function Header(props) {
           elevation={0}
           sx={{
             borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
-            backgroundColor: 'transparent',
-            color: '#063970',
+            backgroundColor: '#F5EED3',
+            color: '#042140',
           }}
         >
           <Container maxWidth="xl">
@@ -48,7 +48,7 @@ export default function Header(props) {
                   height: '50px',
                   marginRight: '10px',
                   justifyContent: 'space-between',
-                  padding: '4px 8px',
+                  padding: '3px 50px',
                 }}
               />
               <Typography

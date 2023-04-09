@@ -6,7 +6,16 @@ import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import Socials from '../components/Socials'
 
-const theme = createTheme()
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#042140',
+    },
+    secondary: {
+      main: '#171615',
+    },
+  },
+})
 
 export default function Footer() {
   return (
@@ -20,20 +29,21 @@ export default function Footer() {
           direction="row"
           alignItems="center"
           sx={{
-            py: 3,
-            px: 2,
+            py: 2,
+            px: 1,
             mt: 'auto',
-            backgroundColor: '#edf5fe',
+            backgroundColor: '#F5EED3',
             position: 'fixed',
             bottom: 0,
             left: 0,
             width: '100%',
+            borderTop: (theme) => `1px solid ${theme.palette.divider}`
           }}
         >
           <Container
             sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}
           >
-            <Typography variant="body1" color="#04264b" mr={1}>
+            <Typography variant="body1" color="#042140" mr={1}>
               © 2023 facebark. All rights reserved.
             </Typography>
             <Socials />

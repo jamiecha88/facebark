@@ -26,7 +26,7 @@ const SocialGrid = styled(Grid)(({ theme }) => ({
   maxWidth: '200px',
   //backgroundColor: 'pink',
   margin: 'auto',
-  marginRight: '80px',
+  marginRight: '5px',
   alignItems: 'center',
 }))
 
@@ -35,18 +35,18 @@ export default function Social({ color }) {
   return (
     <SocialGrid item container spacing={2}>
       <Grid component={'snsIcon'} target="_blank" href={homepage}>
-        <SnsIcon color={'#04264b'} sx={{ color: '#04264b' }}>
+        <SnsIcon color={'#042140'} sx={{ color: '#042140' }}>
           <HomeIcon />
         </SnsIcon>
       </Grid>
 
       <Grid component={'snsIcon'} target="_blank" href={github}>
-        <SnsIcon sx={{ color: '#04264b' }}>
+        <SnsIcon sx={{ color: '#042140' }}>
           <GitHubIcon />
         </SnsIcon>
       </Grid>
       <Grid component={'snsIcon'} target="_blank" href={twitter}>
-        <SnsIcon color={'#04264b'} sx={{ color: '#04264b' }}>
+        <SnsIcon color={'#042140'} sx={{ color: '#042140' }}>
           <TwitterIcon />
         </SnsIcon>
       </Grid>

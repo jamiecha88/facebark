@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import HomeImage from '../assets/green_dogs_multiple.png'
+import HomeImage from '../assets/green_dogs_multiple_transparent.png'
 
 const sections = [{ title: '', url: '' }]
 
@@ -14,7 +14,7 @@ const theme = createTheme({
       main: '#171615',
     },
     secondary: {
-      main: '#063970',
+      main: '#042140',
     },
   },
 })
@@ -22,8 +22,9 @@ const theme = createTheme({
 export default function Homepage() {
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg">
+      <Box sx={{ backgroundColor: '#B4D0A8' }}>
         <Header title="facebark" sections={sections} />
+        <Container maxWidth="lg">
         <Box
           sx={{
             display: 'flex',
@@ -42,12 +43,13 @@ export default function Homepage() {
               height: '450px',
               marginLeft: '-60%',
               borderRadius: '20px',
-              boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
             }}
           />
         </Box>
         <Footer />
       </Container>
+      </Box>
     </ThemeProvider>
+
   )
 }
