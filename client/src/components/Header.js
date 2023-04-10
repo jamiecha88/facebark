@@ -36,7 +36,7 @@ export default function Header(props) {
             borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
             backgroundColor: '#FFFBEE',
             color: '#042140',
-            height: '65px'
+            height: '65px',
           }}
         >
           <Container maxWidth="xl">
@@ -50,7 +50,7 @@ export default function Header(props) {
                   marginRight: '10px',
                   justifyContent: 'center',
                   padding: '3px 100px',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               />
               <Typography
