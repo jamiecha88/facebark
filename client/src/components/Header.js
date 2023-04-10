@@ -34,8 +34,9 @@ export default function Header(props) {
           elevation={0}
           sx={{
             borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
-            backgroundColor: '#F5EED3',
+            backgroundColor: '#FFFBEE',
             color: '#042140',
+            height: '65px'
           }}
         >
           <Container maxWidth="xl">
@@ -47,8 +48,9 @@ export default function Header(props) {
                   display: 'flex',
                   height: '50px',
                   marginRight: '10px',
-                  justifyContent: 'space-between',
-                  padding: '3px 50px',
+                  justifyContent: 'center',
+                  padding: '3px 100px',
+                  alignItems: 'center'
                 }}
               />
               <Typography

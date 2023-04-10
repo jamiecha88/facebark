@@ -29,15 +29,15 @@ export default function Footer() {
           direction="row"
           alignItems="center"
           sx={{
-            py: 2,
+            py: 1.5,
             px: 1,
             mt: 'auto',
-            backgroundColor: '#F5EED3',
+            backgroundColor: '#FFFBEE',
             position: 'fixed',
             bottom: 0,
             left: 0,
             width: '100%',
-            borderTop: (theme) => `1px solid ${theme.palette.divider}`
+            borderTop: (theme) => `1px solid  ${theme.palette.divider}`,
           }}
         >
           <Container

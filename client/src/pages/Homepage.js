@@ -1,10 +1,11 @@
 import * as React from 'react'
 import Container from '@mui/material/Container'
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HomeImage from '../assets/green_dogs_multiple_transparent.png'
+import WelcomeBox from '../components/WelcomeBox'
 
 const sections = [{ title: '', url: '' }]
 
@@ -25,31 +26,38 @@ export default function Homepage() {
       <Box sx={{ backgroundColor: '#B4D0A8' }}>
         <Header title="facebark" sections={sections} />
         <Container maxWidth="lg">
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: 'calc(100vh - 1rem)',
-            paddingTop: '1rem',
-          }}
-        >
-          <img
-            src={HomeImage}
-            alt="HomeImg"
-            style={{
-              maxWidth: '70%',
-              margin: '0 1rem 1rem 0',
-              height: '450px',
-              marginLeft: '-60%',
-              borderRadius: '20px',
-            }}
-          />
-        </Box>
-        <Footer />
-      </Container>
+          <Grid container sx={{ paddingTop: '1rem' }}>
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: 'calc(100vh - 1rem)',
+                }}
+              >
+                <img
+                  src={HomeImage}
+                  alt="HomeImg"
+                  style={{
+                    maxWidth: 'auto',
+                    margin: '0 1rem 1rem 0',
+                    height: 'auto',
+                    borderRadius: '20px',
+                    backgroundColor: 'transparent',
+                  }}
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 1rem)' }}>
+                <WelcomeBox />
+              </Box>
+            </Grid>
+          </Grid>
+          <Footer />
+        </Container>
       </Box>
     </ThemeProvider>
-
   )
 }
