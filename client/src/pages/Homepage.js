@@ -40,10 +40,10 @@ export default function Homepage() {
                   src={HomeImage}
                   alt="HomeImg"
                   style={{
-                    maxWidth: 'auto',
-                    margin: '0 1rem 1rem 0',
+                    maxWidth: '500px',
+                    minWidth: '50px',
+                    margin: '1rem',
                     height: 'auto',
-                    borderRadius: '20px',
                     backgroundColor: 'transparent',
                   }}
                 />

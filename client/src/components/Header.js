@@ -1,13 +1,13 @@
 import * as React from 'react'
 import AppBar from '@mui/material/AppBar'
-import Container from '@mui/material/Container'
-import Toolbar from '@mui/material/Toolbar'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import Typography from '@mui/material/Typography'
-import GlobalStyles from '@mui/material/GlobalStyles'
-import Link from '@mui/material/Link'
 import Button from '@mui/material/Button'
-import Logo from '../assets/output-onlinepngtools.png'
+import Container from '@mui/material/Container'
+import Link from '@mui/material/Link'
+import Logo from '../assets/swirly_logo_blue_transparent.png'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import GlobalStyles from '@mui/material/GlobalStyles'
 
 //const pages = ['About', 'Contact', 'Features'];
 const theme = createTheme({
@@ -34,7 +34,7 @@ export default function Header(props) {
           elevation={0}
           sx={{
             borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
-            backgroundColor: '#FFFBEE',
+            backgroundColor: '#F7FFF4',
             color: '#042140',
             height: '65px',
           }}
@@ -46,11 +46,12 @@ export default function Header(props) {
                 alt="Logo"
                 style={{
                   display: 'flex',
-                  height: '50px',
+                  height: '55px',
                   marginRight: '10px',
                   justifyContent: 'center',
                   padding: '3px 100px',
                   alignItems: 'center',
+                  maxWidth: '100%',
                 }}
               />
               <Typography
@@ -76,7 +77,7 @@ export default function Header(props) {
                     mx: 1.5,
                     textDecoration: 'none',
                     textTransform: 'none',
-                    fontSize: '14px',
+                    fontSize: '16px',
                   }}
                 >
                   About
@@ -91,7 +92,7 @@ export default function Header(props) {
                     mx: 1.5,
                     textDecoration: 'none',
                     textTransform: 'none',
-                    fontSize: '14px',
+                    fontSize: '16px',
                   }}
                 >
                   Contact
@@ -106,7 +107,7 @@ export default function Header(props) {
                     mx: 1.5,
                     textDecoration: 'none',
                     textTransform: 'none',
-                    fontSize: '14px',
+                    fontSize: '16px',
                   }}
                 >
                   Features

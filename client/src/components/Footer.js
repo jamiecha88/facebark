@@ -32,7 +32,7 @@ export default function Footer() {
             py: 1.5,
             px: 1,
             mt: 'auto',
-            backgroundColor: '#FFFBEE',
+            backgroundColor: '#F7FFF4',
             position: 'fixed',
             bottom: 0,
             left: 0,
