@@ -2,13 +2,12 @@
   "name": "facebark",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd client && npm start",
     "build": "cd client && npm run build",
     "eject": "cd client && npm run eject",
+    "start": "cd client && npm start",
     "test": "jest"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^27.0.0"
   }
