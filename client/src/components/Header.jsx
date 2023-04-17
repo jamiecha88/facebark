@@ -1,13 +1,13 @@
-import * as React from 'react'
-import AppBar from '@mui/material/AppBar'
-import Button from '@mui/material/Button'
-import Container from '@mui/material/Container'
-import Link from '@mui/material/Link'
-import Logo from '../assets/swirly_logo_blue_transparent.png'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import GlobalStyles from '@mui/material/GlobalStyles'
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+import Logo from '../assets/swirly_logo_blue_transparent.png';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import GlobalStyles from '@mui/material/GlobalStyles';
 
 //const pages = ['About', 'Contact', 'Features'];
 const theme = createTheme({
@@ -19,7 +19,7 @@ const theme = createTheme({
       main: '#171615',
     },
   },
-})
+});
 
 export default function Header(props) {
   return (
@@ -129,5 +129,5 @@ export default function Header(props) {
         </AppBar>
       </ThemeProvider>
     </React.Fragment>
-  )
+  );
 }

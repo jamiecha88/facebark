@@ -24,9 +24,9 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
-}
+  };
 
-return (
+  return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />

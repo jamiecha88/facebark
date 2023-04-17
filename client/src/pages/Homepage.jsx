@@ -1,13 +1,12 @@
-import * as React from 'react'
-import Container from '@mui/material/Container'
-import { Box, Grid } from '@mui/material'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import HomeImage from '../assets/green_dogs_multiple_transparent.png'
-import WelcomeBox from '../components/WelcomeBox'
+import * as React from 'react';
+import { Box, Container, Grid } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HomeImage from '../assets/green_dogs_multiple_transparent.png';
+import WelcomeBox from '../components/WelcomeBox';
 
-const sections = [{ title: '', url: '' }]
+const sections = [{ title: '', url: '' }];
 
 const theme = createTheme({
   palette: {
@@ -18,7 +17,7 @@ const theme = createTheme({
       main: '#042140',
     },
   },
-})
+});
 
 export default function Homepage() {
   return (
@@ -59,5 +58,5 @@ export default function Homepage() {
         </Container>
       </Box>
     </ThemeProvider>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 //App.js is the Homepage of app (welcome user, signin/register)
 
-import * as React from 'react';
-import Homepage from '../src/pages/Homepage'
+import React from 'react';
+import Homepage from '../src/pages/Homepage';
 
 export default function App() {
   return (
@@ -10,4 +10,3 @@ export default function App() {
     </div>
   );
 }
-

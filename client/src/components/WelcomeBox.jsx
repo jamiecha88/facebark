@@ -1,7 +1,7 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 export default function WelcomeBox() {
   return (
@@ -33,6 +33,5 @@ export default function WelcomeBox() {
         </Button>
       </Box>
     </Box>
-  )
+  );
 }
-

@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import GlobalStyles from '@mui/material/GlobalStyles'
-import { Grid } from '@mui/material'
-import Typography from '@mui/material/Typography'
-import Container from '@mui/material/Container'
-import Socials from '../components/Socials'
+import * as React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import GlobalStyles from '@mui/material/GlobalStyles';
+import { Grid } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Socials from '../components/Socials';
 
 const theme = createTheme({
   palette: {
@@ -15,14 +15,12 @@ const theme = createTheme({
       main: '#171615',
     },
   },
-})
+});
 
 export default function Footer() {
   return (
-    <React.Fragment>
-      <GlobalStyles
-        styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }}
-      />
+    <>
+      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <ThemeProvider theme={theme}>
         <Grid
           component="footer"
@@ -40,9 +38,7 @@ export default function Footer() {
             borderTop: (theme) => `1px solid  ${theme.palette.divider}`,
           }}
         >
-          <Container
-            sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}
-          >
+          <Container sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
             <Typography variant="body1" color="#042140" mr={1}>
               © 2023 facebark. All rights reserved.
             </Typography>
@@ -50,6 +46,6 @@ export default function Footer() {
           </Container>
         </Grid>
       </ThemeProvider>
-    </React.Fragment>
-  )
+    </>
+  );
 }

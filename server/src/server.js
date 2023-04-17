@@ -8,20 +8,18 @@ const methodOverride = require("method-override");
 const flash = require("express-flash");
 const logger = require("morgan");
 const connectDB = require("./config/database");
-//const homeRoutes = require("./routes/home")
-//const issuesRoutes = require("./routes/issues");
+const homeRoutes = require("./routes/home")
 
-//require("dotenv").config({ path: "./config/.env" });
+require("dotenv").config({ path: "./config/.env" });
 
-//require("./config/passport")(passport);
+require("./config/auth")(passport);
 
 connectDB();
-
-//setting view engine to ???
 
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
+
 app.use(express.json());
 
 app.use(logger("dev"));
@@ -39,16 +37,13 @@ app.use(
 );
 
 app.use(passport.initialize());
-app.use(passport.session());
 
+app.use(passport.session());
 
 app.use(flash());
 
-//Routes (change these)
-//app.use("/", mainRoutes)
-//app.use("/issues", issuesRoutes);
-
-
+//Routes (simplified)
+app.use("/", homeRoutes)
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on, you better catch it!`);
