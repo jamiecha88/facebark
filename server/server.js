@@ -7,8 +7,8 @@ const MongoStore = require("connect-mongodb-session")(session);
 const methodOverride = require("method-override");
 const flash = require("express-flash");
 const logger = require("morgan");
-//const connectDB = require("./config/database");
-//const mainRoutes = require("./routes/main")
+const connectDB = require("./config/database");
+//const homeRoutes = require("./routes/home")
 //const issuesRoutes = require("./routes/issues");
 
 //require("dotenv").config({ path: "./config/.env" });
