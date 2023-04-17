@@ -14,11 +14,12 @@ server/node_modules
 .env.development.local
 .env.test.local
 .env.production.local
+.hintrc
+client/src/assets
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-client/src/yarn.lock
-
-client/src/assets
+# secrets
+server/config/.env
