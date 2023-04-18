@@ -22,4 +22,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # secrets
-server/config/.env
+server/src/config/.env
