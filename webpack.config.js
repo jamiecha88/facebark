@@ -1,4 +1,6 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = function (_env, argv) {
   const isProduction = argv.mode === "production";
@@ -30,6 +32,18 @@ module.exports = function (_env, argv) {
     },
     resolve: {
       extensions: [".js", ".jsx"],
+    },
+    plugins: [
+      new CleanWebpackPlugin(),
+      new HtmlWebpackPlugin({
+        template: "./client/public/index.html",
+        filename: "index.html",
+        favicon: "./client/public/favicon.ico",
+      }),
+    ],
+    devServer: {
+      port: 3000,
+      historyApiFallback: true,
     },
   };
 };
