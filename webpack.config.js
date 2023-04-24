@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+
 
 module.exports = function (_env, argv) {
   const isProduction = argv.mode === "production";
@@ -34,6 +36,7 @@ module.exports = function (_env, argv) {
       extensions: [".js", ".jsx"],
     },
     plugins: [
+      new ReactRefreshWebpackPlugin(),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: "./client/public/index.html",
