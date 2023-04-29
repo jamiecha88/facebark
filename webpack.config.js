@@ -12,7 +12,7 @@ module.exports = function (_env, argv) {
     devtool: isDevelopment && "cheap-module-source-map",
     entry: "./client/src/index.jsx",
     output: {
-      path: path.resolve(__dirname, "client/dist"),
+      path: path.resolve(__dirname, "client/dist"), //change to server/public instead?
       filename: "assets/js/[name].[contenthash:8].js",
       publicPath: "/",
     },
