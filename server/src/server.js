@@ -7,7 +7,7 @@ import methodOverride from "method-override";
 import flash from "express-flash";
 import logger from "morgan";
 import connectDB from "./config/database.js";
-import routes from "./routes/index.js";
+import mainRoutes from "./routes/index";
 import path from "path";
 import dotenv from "dotenv";
 
@@ -49,7 +49,7 @@ app.use(passport.session());
 app.use(flash());
 
 //mount your server-side routes
-app.use("/", routes);
+app.use("/", mainRoutes);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on, you better catch it!`);

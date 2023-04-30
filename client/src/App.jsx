@@ -1,15 +1,26 @@
 //App.jsx is the Homepage of app (welcome user, signin/register)
 
-import * as React from 'react';
-import { BrowserRouter as Switch, Router, Route } from 'react-router-dom';
-import Homepage from '../src/pages/Homepage'
-import routes from './routes'
+// client-side app.jsx
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import mainRoutes from './routes/main';
+//import Homepage from './pages/Homepage';
 
 export default function App() {
+// const routes = [
+//   {
+//     path: '/',
+//     exact: true,
+//     component: Homepage,
+//   },
+// ];
   return (
-    <div className="">
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        {mainRoutes.map((route, index) => (
+          <Route key={index} {...route} />
+        ))}
+      </Switch>
+    </BrowserRouter>
   );
 }
-
