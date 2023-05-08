@@ -1,12 +1,12 @@
 //App.js is the Homepage of app (welcome user, signin/register)
 
 import React from 'react';
-import Homepage from '../src/pages/Homepage';
+import Home from '../src/pages/Home';
 
 export default function App() {
   return (
     <div className="">
-      <Homepage />
+      <Home />
     </div>
   );
 }

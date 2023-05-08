@@ -23,3 +23,7 @@ const routes = [
 ];
 
 export default routes;
+
+/* Use protected routes for authenticated users, and public routes for non-authenticated users. You can use a higher-order component to protect routes that require authentication.
+
+Use client-side routing with React Router to handle routing on the client-side. This allows for faster navigation and a better user experience. */

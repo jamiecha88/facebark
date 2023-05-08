@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Box, Container, Grid } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../../components/layouts/Header/Header';
+import Footer from '../../components/layouts/Footer/Footer';
 import HomeImage from '../assets/green_dogs_multiple_transparent.png';
-import WelcomeBox from '../components/WelcomeBox';
+import WelcomeBox from '../../components/WelcomeBox';
 
 const sections = [{ title: '', url: '' }];
 
@@ -19,7 +19,7 @@ const theme = createTheme({
   },
 });
 
-export default function Homepage() {
+export default function LandingPage() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ backgroundColor: '#B4D0A8' }}>

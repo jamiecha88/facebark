@@ -4,7 +4,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Socials from '../components/Socials';
+import Socials from '../../common/Icons/Socials';
 
 const theme = createTheme({
   palette: {

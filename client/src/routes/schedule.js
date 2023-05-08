@@ -1,0 +1,1 @@
+// Use a hierarchical URL structure to create nested routes, which represent the different parts of your application. For example, you can have /schedule as the top-level route, and then have nested routes for /:id, /:id/edit, and /:id/delete for specific schedules.
