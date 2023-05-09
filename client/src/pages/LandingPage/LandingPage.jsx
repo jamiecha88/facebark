@@ -4,7 +4,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../../components/layouts/Header/Header';
 import Footer from '../../components/layouts/Footer/Footer';
 import HomeImage from '../assets/green_dogs_multiple_transparent.png';
-import WelcomeBox from '../../components/WelcomeBox';
+//import WelcomeBox from '../../components/WelcomeBox';
+//import About from '../pages/LandingPage/sections/About
+//import Contact from '../pages/LandingPage/sections/Contact
+
 
 const sections = [{ title: '', url: '' }];
 
@@ -50,7 +53,7 @@ export default function LandingPage() {
             </Grid>
             <Grid item xs={12} md={6}>
               <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 1rem)' }}>
-                <WelcomeBox />
+                {/* <WelcomeBox /> */}
               </Box>
             </Grid>
           </Grid>

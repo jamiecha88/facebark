@@ -1,28 +1,29 @@
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
-import NotFound from '../pages/NotFound';
+//central location for exporting all routes in the app. Import all route config files, combine into a single array, and export them for use in main App component
 
-const routes = [
+import { Switch, Route } from 'react-router-dom';
+import Home from '../pages/HomePage/Home';
+import Error from '../pages/ErrorPage/Error';
+
+const mainRoutes = [
   {
     path: '/',
     component: Home,
     exact: true
   },
   {
-    path: '/about',
-    component: About
-  },
-  {
-    path: '/contact',
-    component: Contact
-  },
-  {
-    component: NotFound
+    component: Error
   }
 ];
 
-export default routes;
+export default function Routes() {
+  return (
+    <Switch>
+      {mainRoutes.map((route, index) => (
+        <Route key={index} {...route} />
+      ))}
+    </Switch>
+  );
+}
 
 /* Use protected routes for authenticated users, and public routes for non-authenticated users. You can use a higher-order component to protect routes that require authentication.
 
