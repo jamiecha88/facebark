@@ -10,6 +10,7 @@ module.exports = function (_env, argv) {
 
   return {
     devtool: isDevelopment && "cheap-module-source-map",
+    //use devtool instead of `mode: env` for easier debugging. Set mode's value in env (either development, production, or none)
     entry: "./client/src/index.jsx",
     output: {
       path: path.resolve(__dirname, "client/dist"), //change to server/public instead?
