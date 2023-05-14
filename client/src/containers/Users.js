@@ -1,1 +1,1 @@
-/* The `components/` directory contains the presentational components that make up the UI, while the containers/ directory contains the container components that connect to the Redux store and pass down props to the presentational components. */
+/* containers/ directory contains the container components that connect to the Redux store and pass down props to the presentational components. */

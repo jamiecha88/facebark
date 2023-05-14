@@ -1,5 +1,6 @@
 //under login form will have a link to create a new account
 import * as React from 'react';
+import { useHistory } from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -17,6 +18,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme();
 
 export default function SignIn() {
+  const history = useHistory();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -24,6 +26,10 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
+    //Login logic here
+    
+    //redirect user to dashboard after successful login
+    history.push('/dashboard');
   };
 
   return (

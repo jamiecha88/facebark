@@ -3,17 +3,32 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Dashboard from '../pages/DashboardPage/Dashboard';
+import LandingPage from '../pages/LandingPage/LandingPage';
+import Register from '../pages/RegisterPage/Register';
+import Login from '../pages/LoginPage/Login';
+import Overview from '../pages/UserPage/OverviewPage/Overview';
 import Error from '../pages/ErrorPage/Error';
 
 const mainRoutes = [
   {
-    path: '/dashboard',
-    component: Dashboard,
+    path: '/',
+    component: LandingPage,
+  },
+  {
+    path: '/register',
+    component: Register,
+  },
+  {
+    path: '/login',
+    component: Login,
+  },
+  {
+    path: '/user/overview',
+    component: Overview,
   },
   {
     component: Error
-  }
+  },
 ];
 
 export default function Routes() {
