@@ -6,8 +6,6 @@ import Profile from '../pages/UserPage/ProfilePage/Profile'
 import Messages from '../pages/UserPage/MessagesPage/Messages'
 import Friends from '../pages/UserPage/FriendsPage/Friends'
 import Notifications from '../pages/UserPage/NotificationsPage/Notifications'
-import Settings from '../pages/UserPage/SettingsPage/Settings'
-
 
 const userRoutes = [
     {
@@ -25,10 +23,6 @@ const userRoutes = [
     {
         path: '/user/notifications',
         component: Notifications,
-    },
-    {
-        path: '/user/settings',
-        component: Settings,
     },
 ]
 

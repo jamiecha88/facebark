@@ -5,7 +5,7 @@ import contactRoutes from './contact';
 
 const router = Router();
 
-// Mount your server-side routes
+// Mount server-side routes
 router.use('/', homeRoutes);
 router.use('/about', aboutRoutes);
 router.use('/contact', contactRoutes);

@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import LandingPage from '../pages/LandingPage/LandingPage';
 import Register from '../pages/RegisterPage/Register';
 import Login from '../pages/LoginPage/Login';
-import Overview from '../pages/UserPage/OverviewPage/Overview';
+import Dashboard from '../pages/UserPage/DashboardPage/sections/Dashboard';
 import Error from '../pages/ErrorPage/Error';
 
 const mainRoutes = [
@@ -23,8 +23,8 @@ const mainRoutes = [
     component: Login,
   },
   {
-    path: '/user/overview',
-    component: Overview,
+    path: '/user',
+    component: Dashboard,
   },
   {
     component: Error
