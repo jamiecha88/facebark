@@ -23,7 +23,7 @@ const mainRoutes = [
     component: Login,
   },
   {
-    path: '/user',
+    // path: '/user',...[userID]
     component: Dashboard,
   },
   {

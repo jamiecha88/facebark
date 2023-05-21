@@ -1,0 +1,8 @@
+/*
+
+add credit card info
+venmo
+bank account
+google or apple pay
+
+*/

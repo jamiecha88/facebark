@@ -1,0 +1,7 @@
+/* preferred alert notifications
+
+email
+sms
+phone
+
+*/
