@@ -6,8 +6,9 @@ import { Switch, Route } from 'react-router-dom';
 import LandingPage from '../pages/LandingPage/LandingPage';
 import Register from '../pages/RegisterPage/Register';
 import Login from '../pages/LoginPage/Login';
-import Dashboard from '../pages/UserPage/DashboardPage/sections/Dashboard';
-import Error from '../pages/ErrorPage/Error';
+import Contact from '../pages/LandingPage/sections/Contact';
+import About from '../pages/LandingPage/sections/About';
+import Features from '../pages/LandingPage/sections/Features';
 
 const mainRoutes = [
   {
@@ -23,12 +24,17 @@ const mainRoutes = [
     component: Login,
   },
   {
-    // path: '/user',...[userID]
-    component: Dashboard,
+    path: '/contact',
+    component: Contact,
   },
   {
-    component: Error
+    path: '/about',
+    component: About,
   },
+  {
+    path: '/features',
+    component: Features,
+  }
 ];
 
 export default function Routes() {
