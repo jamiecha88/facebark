@@ -34,7 +34,7 @@ const mainRoutes = [
   {
     path: '/features',
     component: Features,
-  }
+  },
 ];
 
 export default function Routes() {

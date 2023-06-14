@@ -19,15 +19,18 @@ const theme = createTheme();
 
 export default function SignIn() {
   const history = useHistory();
+  //useHistory() hook is called to get the history object. It allows navigation between different routes
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //this method is called to prevent the default form submission behavior, which could cause a page refresh
     const data = new FormData(event.currentTarget);
+    //FormData object is created by passing `event.currentTarget` (the form element) as an argument. This allows accessing the form data.
     console.log({
       email: data.get('email'),
       password: data.get('password'),
-    });
-    //Login logic here
-    
+    }); //console logs an object with the form field values (email and pw), obtained using the FormData object's `get` method.
+
+    //Login logic here (like sending a req to server to auth the user's credentials)
+
     //redirect user to dashboard after successful login
     history.push('/dashboard');
   };
@@ -50,7 +53,12 @@ export default function SignIn() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box
+            component="form"
+            onSubmit={handleSubmit}
+            noValidate
+            sx={{ mt: 1 }}
+          >
             <TextField
               margin="normal"
               required

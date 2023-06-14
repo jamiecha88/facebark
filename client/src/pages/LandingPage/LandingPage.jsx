@@ -8,7 +8,6 @@ import HomeImage from '../assets/green_dogs_multiple_transparent.png';
 //import About from '../pages/LandingPage/sections/About
 //import Contact from '../pages/LandingPage/sections/Contact
 
-
 const sections = [{ title: '', url: '' }];
 
 const theme = createTheme({
@@ -52,7 +51,14 @@ export default function LandingPage() {
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 1rem)' }}>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: 'calc(100vh - 1rem)',
+                }}
+              >
                 {/* <WelcomeBox /> */}
               </Box>
             </Grid>
