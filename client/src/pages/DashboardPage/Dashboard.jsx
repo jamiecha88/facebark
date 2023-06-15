@@ -1,24 +1,22 @@
-//include hyperlinks for Account, Events, Friends, Feed, Settings, etc.
-
 import React from "react";
-import Account from "../pages/AccountPage/Account";
-import Events from "../DashboardPage/sections/Events";
-import Friends from ".sections/Friends/Friends";
-import Map from "./sections/Map/Map";
-import Messages from "./sections/Messages/Messages";
-import Settings from "../pages/SettingsPage/Settings";
-import Sidebar from "../pages/DashboardPage/sections/Sidebar";
+import Sidebar from "./sections/Sidebar/Sidebar";
+import Events from "./sections/Events/Events";
+import SchedulePlaydate from "./sections/SchedulePlaydate/SchedulePlaydate";
+import LearningResources from "./sections/LearningResources/LearningResources";
+import News from "./sections/News/News";
+//import Calendar (as a component?)
+//import Avatar..top right icon to logout (as a component?)
+//import notification?
+//import logo
 
 export default function Dashboard() {
   return (
     <div>
-      <Account />
-      <Events />
-      <Friends />
-      <Map />
-      <Messages />
-      <Settings />
       <Sidebar />
+      <Events />
+      <SchedulePlaydate />
+      <LearningResources />
+      <News />
     </div>
   );
 }
