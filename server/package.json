@@ -1,7 +1,7 @@
 {
-  "name": "facebark-server",
+  "name": "facebark",
   "version": "1.0.0",
-  "description": "sns for dogs",
+  "description": "dog social media platform",
   "bugs": {
     "url": "https://github.com/jamiecha88/facebark/issues"
   },
