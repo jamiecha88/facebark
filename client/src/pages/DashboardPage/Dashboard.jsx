@@ -5,14 +5,16 @@ import SchedulePlaydate from "./sections/Playdate/Playdate";
 import LearningResources from "./sections/Learning/Learning";
 import News from "./sections/News/News";
 //import Calendar (as a component?)
-//import Avatar..top right icon to logout (as a component?)
+import Avatar from '../../components/common/Avatar/Avatar'
 //import notification?
-//import logo
+import Logo from '../../../public/assets/logo/fb_white_transparent.png'
 
 export default function Dashboard() {
   return (
     <div>
       <Sidebar />
+      <Logo />
+      <Avatar />
       <Events />
       <SchedulePlaydate />
       <LearningResources />
