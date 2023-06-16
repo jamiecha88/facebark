@@ -11,9 +11,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import {
-  Inbox as InboxIcon,
+  ExploreOutlined as ExploredOutlinedIcon,
+  Diversity1Outlined as Diversity1OutlinedIcon,
   Mail as MailIcon,
-  Star as StarIcon,
   Drafts as DraftsIcon,
   MarkunreadMailbox as AllMailIcon,
   Delete as DeleteIcon,
@@ -24,8 +24,8 @@ const drawerWidth = 240;
 
 export default function Sidebar() {
   const items = [
-    { text: "Inbox", icon: <InboxIcon /> },
-    { text: "Starred", icon: <StarIcon /> },
+    { text: "Explore", icon: <ExploredOutlinedIcon /> },
+    { text: "Friends", icon: <Diversity1OutlinedIcon /> },
     { text: "Messages", icon: <MailIcon /> },
     { text: "Drafts", icon: <DraftsIcon /> },
     { text: "All Mail", icon: <AllMailIcon /> },
@@ -63,7 +63,7 @@ export default function Sidebar() {
           {items.map((item) => (
             <ListItem key={item.text} disablePadding>
               <ListItemButton sx={{ justifyContent: 'center' }}>
-                <ListItemIcon sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{item.icon}</ListItemIcon>
+                <ListItemIcon sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '2em' }}>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItemButton>
             </ListItem>
@@ -76,11 +76,10 @@ export default function Sidebar() {
       >
         <Toolbar />
         <Typography paragraph>
-          Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore
-          magna aliqua.
+          A bunch of text here.
         </Typography>
         <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit.
+          More text down here.
         </Typography>
       </Box>
     </Box>
