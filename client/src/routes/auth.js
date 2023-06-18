@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import UserPage from '../pages/UserPage/UserPage';
+import Dashboard from '../pages/DashboardPage/Dashboard';
 import Error from '../pages/ErrorPage/Error';
 
 const authRoutes = [
     {
         path: '/:userId',
-        component: UserPage,
+        component: Dashboard,
         exact: true,
     },
     {

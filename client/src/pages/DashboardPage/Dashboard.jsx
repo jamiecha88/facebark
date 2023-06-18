@@ -1,13 +1,10 @@
 import React from "react";
 import Sidebar from "./sections/Sidebar/Sidebar";
-import Appbar from "./sections/Appbar/Appbar";
+import Appbar from "./layout/Appbar/Appbar";
 import Events from "./sections/Events/Events";
-import SchedulePlaydate from "./sections/Playdate/Playdate";
-import LearningResources from "./sections/Learning/Learning";
+import Playdate from "./sections/Playdate/Playdate";
+import Learning from "./sections/Learning/Learning";
 import News from "./sections/News/News";
-//import Calendar
-import Avatar from '../../components/common/Avatar/Avatar'
-//import Notification
 import Logo from '../../../public/assets/logo/fb_white_transparent.png'
 
 export default function Dashboard() {
@@ -16,10 +13,10 @@ export default function Dashboard() {
       <Sidebar />
       <Appbar/>
       <Logo />
-      <Avatar />
+      {/* reference in src instead, not as a react component */}
       <Events />
-      <SchedulePlaydate />
-      <LearningResources />
+      <Playdate />
+      <Learning />
       <News />
     </div>
   );
