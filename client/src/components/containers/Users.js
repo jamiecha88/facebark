@@ -1,1 +1,0 @@
-/* containers/ directory contains the container components that connect to the Redux store and pass down props to the presentational components. */

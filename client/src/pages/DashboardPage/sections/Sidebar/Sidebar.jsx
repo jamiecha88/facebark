@@ -12,12 +12,11 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import {
   ExploreOutlined as ExploredOutlinedIcon,
-  Diversity1Outlined as Diversity1OutlinedIcon,
-  Mail as MailIcon,
-  Drafts as DraftsIcon,
-  MarkunreadMailbox as AllMailIcon,
-  Delete as DeleteIcon,
-  Report as SpamIcon,
+  PeopleAltOutlined as PeopleAltOutlinedIcon,
+  MailOutlined as MailOutlinedIcon,
+  FmdGoodOutlined as FmdGoodOutlinedIcon,
+  PetsOutlined as PetsOutlinedIcon,
+  SettingsOutlined as SettingsOutlinedIcon
 } from "@mui/icons-material";
 
 const drawerWidth = 240;
@@ -25,16 +24,14 @@ const drawerWidth = 240;
 export default function Sidebar() {
   const items = [
     { text: "Explore", icon: <ExploredOutlinedIcon /> },
-    { text: "Friends", icon: <Diversity1OutlinedIcon /> },
-    { text: "Messages", icon: <MailIcon /> },
-    { text: "Drafts", icon: <DraftsIcon /> },
-    { text: "All Mail", icon: <AllMailIcon /> },
-    { text: "Trash", icon: <DeleteIcon /> },
-    { text: "Spam", icon: <SpamIcon /> },
+    { text: "Friends", icon: <PeopleAltOutlinedIcon /> },
+    { text: "Messages", icon: <MailOutlinedIcon /> },
+    { text: "Maps", icon: <FmdGoodOutlinedIcon /> },
+    { text: "Profile", icon: <PetsOutlinedIcon /> },
+    { text: "Settings", icon: <SettingsOutlinedIcon /> }
   ];
-
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
         position="fixed"
