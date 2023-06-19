@@ -1,0 +1,30 @@
+/* Coolors Exported Palette - https://coolors.co/f7d205-b3d0a7-c2855b-e86e50-f7d208-eb6647-f8c0cd-835e34-77893f-68892e */
+
+/* CSV */
+F7D205,B3D0A7,C2855B,E86E50,F7D208,EB6647,F8C0CD,835E34,77893F,68892E
+
+/* With # */
+#F7D205, #B3D0A7, #C2855B, #E86E50, #F7D208, #EB6647, #F8C0CD, #835E34, #77893F, #68892E
+
+/* Array */
+["F7D205","B3D0A7","C2855B","E86E50","F7D208","EB6647","F8C0CD","835E34","77893F","68892E"]
+
+/* Object */
+{"Gold":"F7D205","Celadon":"B3D0A7","Persian orange":"C2855B","Burnt sienna":"E86E50","Gold 2":"F7D208","Burnt sienna 2":"EB6647","Orchid pink":"F8C0CD","Coyote":"835E34","Moss green":"77893F","Avocado":"68892E"}
+
+/* Extended Array */
+[{"name":"Gold","hex":"F7D205","rgb":[247,210,5],"cmyk":[0,15,98,3],"hsb":[51,98,97],"hsl":[51,96,49],"lab":[85,-3,85]},{"name":"Celadon","hex":"B3D0A7","rgb":[179,208,167],"cmyk":[14,0,20,18],"hsb":[102,20,82],"hsl":[102,30,74],"lab":[80,-17,17]},{"name":"Persian orange","hex":"C2855B","rgb":[194,133,91],"cmyk":[0,31,53,24],"hsb":[24,53,76],"hsl":[24,46,56],"lab":[61,19,32]},{"name":"Burnt sienna","hex":"E86E50","rgb":[232,110,80],"cmyk":[0,53,66,9],"hsb":[12,66,91],"hsl":[12,77,61],"lab":[61,45,39]},{"name":"Gold","hex":"F7D208","rgb":[247,210,8],"cmyk":[0,15,97,3],"hsb":[51,97,97],"hsl":[51,94,50],"lab":[85,-3,85]},{"name":"Burnt sienna","hex":"EB6647","rgb":[235,102,71],"cmyk":[0,57,70,8],"hsb":[11,70,92],"hsl":[11,80,60],"lab":[60,50,43]},{"name":"Orchid pink","hex":"F8C0CD","rgb":[248,192,205],"cmyk":[0,23,17,3],"hsb":[346,23,97],"hsl":[346,80,86],"lab":[83,22,1]},{"name":"Coyote","hex":"835E34","rgb":[131,94,52],"cmyk":[0,28,60,49],"hsb":[32,60,51],"hsl":[32,43,36],"lab":[43,10,30]},{"name":"Moss green","hex":"77893F","rgb":[119,137,63],"cmyk":[13,0,54,46],"hsb":[75,54,54],"hsl":[75,37,39],"lab":[54,-18,37]},{"name":"Avocado","hex":"68892E","rgb":[104,137,46],"cmyk":[24,0,66,46],"hsb":[82,66,54],"hsl":[82,50,36],"lab":[53,-26,43]}]
+
+/* XML */
+<palette>
+  <color name="Gold" hex="F7D205" r="247" g="210" b="5" />
+  <color name="Celadon" hex="B3D0A7" r="179" g="208" b="167" />
+  <color name="Persian orange" hex="C2855B" r="194" g="133" b="91" />
+  <color name="Burnt sienna" hex="E86E50" r="232" g="110" b="80" />
+  <color name="Gold" hex="F7D208" r="247" g="210" b="8" />
+  <color name="Burnt sienna" hex="EB6647" r="235" g="102" b="71" />
+  <color name="Orchid pink" hex="F8C0CD" r="248" g="192" b="205" />
+  <color name="Coyote" hex="835E34" r="131" g="94" b="52" />
+  <color name="Moss green" hex="77893F" r="119" g="137" b="63" />
+  <color name="Avocado" hex="68892E" r="104" g="137" b="46" />
+</palette>

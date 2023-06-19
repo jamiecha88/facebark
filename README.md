@@ -1,7 +1,7 @@
 
 <h1>facebark</h1>
 
-<img src="client/src/assets/demo_homepage.png" alt="home" style="display:block; margin:auto;">
+<img src="client/public/assets/demo_homepage.png" alt="home" style="display:block; margin:auto;">
 
 ## Features
 

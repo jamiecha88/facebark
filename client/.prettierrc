@@ -1,0 +1,14 @@
+{
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "importOrder": [
+        "^\\u0000",
+        "^@?\\w",
+        "^",
+        "^\\u0000"
+    ],
+    "importOrderSeparation": true
+}

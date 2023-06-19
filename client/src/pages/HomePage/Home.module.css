@@ -1,0 +1,25 @@
+.landing-page-container {
+    background-color: #B4D0A8;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1rem);
+}
+
+.home-image {
+    max-width: 500px;
+    min-width: 50px;
+    margin: 1rem;
+    height: auto;
+    background-color: transparent;
+}
+
+.welcome-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1rem);
+}
