@@ -15,7 +15,7 @@ const authRoutes = [
     },
     {
         path: '*',
-        redirect: '/404', // Redirect to 404 page for all unmatched routes
+        redirect: '/404',
     },
 ]
 

@@ -1,23 +1,29 @@
-import React from "react";
+import * as React from "react";
+import PropTypes from "prop-types";
 import Sidebar from "./sections/Sidebar/Sidebar";
 import Appbar from "./layout/Appbar/Appbar";
-import Events from "./sections/Events/Events";
-import Playdate from "./sections/Playdate/Playdate";
-import Learning from "./sections/Learning/Learning";
-import News from "./sections/News/News";
-import Logo from '../../../public/assets/logo/fb_white_transparent.png'
+// import Events from "./sections/Events/Events";
+// import Playdate from "./sections/Playdate/Playdate";
+// import Learning from "./sections/Learning/Learning";
+// import News from "./sections/News/News";
+// import Logo from '../../../public/assets/logo/fb_white_transparent.png'
 
-export default function Dashboard() {
+function Dashboard() {
   return (
     <div>
       <Sidebar />
-      <Appbar/>
-      <Logo />
-      {/* reference in src instead, not as a react component */}
+      <Appbar />
+      {/* <Logo />
       <Events />
       <Playdate />
       <Learning />
-      <News />
+      <News /> */}
     </div>
   );
 }
+
+Dashboard.propTypes = {
+  window: PropTypes.func,
+};
+
+export default Dashboard;

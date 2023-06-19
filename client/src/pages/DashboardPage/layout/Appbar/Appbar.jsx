@@ -1,23 +1,34 @@
 import * as React from "react";
-import PropTypes from 'prop-types';
-import CssBaseline from "@mui/material/CssBaseline";
-import {
-    Appbar,
-    Avatar,
-    Badge,
-    Box,
-    IconButton,
-    Stack,
-    SvgIcon,
-    Tooltip,
-    useMediaQuery
-} from '@mui/material';
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import UserAvatar from '../../../../common/UserAvatar/UserAvatar'
-//import svg icons for notifications and calendar user redirect(?)
-//import user avatar 
+import { AppBar, IconButton, Toolbar } from "@mui/material";
 
-export default function MenuBar() {
-    
+const drawerWidth = 240;
+
+function AppBarMenu(props) {
+  const { handleDrawerToggle } = props;
+
+  return (
+    <AppBar
+      position="fixed"
+      sx={{
+        width: { sm: `calc(100% - ${drawerWidth}px)` },
+        ml: { sm: `${drawerWidth}px` },
+      }}
+    >
+      <Toolbar>
+        <IconButton
+          color="inherit"
+          aria-label="open drawer"
+          edge="start"
+          onClick={handleDrawerToggle}
+          sx={{ mr: 2, display: { sm: "none" } }}
+        ></IconButton>
+        <Typography variant="h6" noWrap component="div">
+          Responsive Appbar
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
 }
+
+export default AppBarMenu;
