@@ -20,17 +20,11 @@ require("./config/auth.js")(passport);
 
 connectDB();
 
-//serve static assets from the client/build folder
-app.use(express.static(path.join(__dirname, '../client/public')));
-
+//serves static files from client/src/public. Allows server to server static files located in /public directory of client side. These files can be accessed directly by the client without going through extra routes or middleware
+app.use(express.static(path.join(__dirname, '../../client/public')));
 app.use(express.urlencoded({ extended: true }));
-
-//middleware for parsing json requests
 app.use(express.json());
-
 app.use(logger("dev"));
-
-//Use forms for put / delete
 app.use(methodOverride("_method"));
 
 app.use(
@@ -43,13 +37,25 @@ app.use(
 );
 
 app.use(passport.initialize());
-
 app.use(passport.session());
-
 app.use(flash());
 
-//mount your server-side routes
-app.use("/api", apiRoutes); //
+//api routes in server will handle requests from client side
+app.use("/api", apiRoutes);
+
+//server will serve static files and direct all other routes to client side app
+//serve the built and optimized version of client side app.
+app.use(express.static(path.join(__dirname, "../../client/build")));
+
+//ensures client side is built and deployed
+//handles all other routes that are not explicitly defined.
+//when req is made to route that's not matched on server, this will catch the request and serve the index.html from client/build directory.
+//usually used SPA where client side app handles routing internally (react router).
+//servering index.html for unmatches routes lets client side handle routing/rending of appropriate components
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+});
+
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on, you better catch it!`);
