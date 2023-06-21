@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Sidebar from "./sections/Sidebar/Sidebar";
+import Sidebar from "./layout/Sidebar/Sidebar";
 import Appbar from "./layout/Appbar/Appbar";
 // import Events from "./sections/Events/Events";
 // import Playdate from "./sections/Playdate/Playdate";

@@ -1,6 +1,6 @@
 {
-    "name": "My PWA",
-    "short_name": "My PWA",
+    "name": "facebark",
+    "short_name": "My app",
     "icons": [
       {
         "src": "/images/icon-192x192.png",

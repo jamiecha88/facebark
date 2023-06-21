@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Dashboard from "../pages/DashboardPage/Dashboard";
-import Profile from "../pages/UserPage/ProfilePage/Profile";
-import Messages from "../pages/UserPage/MessagesPage/Messages";
-import Friends from "../pages/UserPage/FriendsPage/Friends";
-import Settings from "../pages/UserPage/SettingsPage/Settings";
+import Profile from "../pages/DashboardPage/sections/Profile/Profile";
+import Messages from "../pages/DashboardPage/sections/Messages/Messages";
+import Friends from "../pages/DashboardPage/sections/Friends/Friends";
+import Settings from "../pages/DashboardPage/sections/Settings/Settings";
 
 const userRoutes = [
     {
