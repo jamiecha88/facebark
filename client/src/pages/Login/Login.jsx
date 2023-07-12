@@ -1,18 +1,9 @@
 //under login form will have a link to create a new account
 import * as React from 'react';
 import { useHistory } from 'react-router-dom';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+import { Avatar, Button, TextField, FormControlLabel, Checkbox, Link, Grid, Box, Typography, Container } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+import LockOutlinedIcon from '@mui/icons-material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme();
@@ -28,9 +19,7 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     }); //console logs an object with the form field values (email and pw), obtained using the FormData object's `get` method.
-
     //Login logic here (like sending a req to server to auth the user's credentials)
-
     //redirect user to dashboard after successful login
     history.push('/dashboard');
   };

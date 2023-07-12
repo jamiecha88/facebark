@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Dashboard from '../pages/DashboardPage/Dashboard';
-import Error from '../pages/ErrorPage/Error';
+import Dashboard from '../pages/Dashboard/Dashboard';
+import Error from '../pages/Error';
 
 const authRoutes = [
     {

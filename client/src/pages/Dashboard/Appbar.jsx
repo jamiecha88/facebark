@@ -1,6 +1,7 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import { AppBar, IconButton, Toolbar } from "@mui/material";
+//logo
 
 const drawerWidth = 240;
 
@@ -24,7 +25,7 @@ function AppBarMenu(props) {
           sx={{ mr: 2, display: { sm: "none" } }}
         ></IconButton>
         <Typography variant="h6" noWrap component="div">
-          Responsive Appbar
+          Hello User
         </Typography>
       </Toolbar>
     </AppBar>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from '../pages/HomePage/Home';
-import Register from '../pages/RegisterPage/Register';
-import Login from '../pages/LoginPage/Login';
-import Contact from '../pages/ContactPage/Contact';
-import About from '../pages/AboutPage/About';
-import Features from '../pages/FeaturesPage/Features';
+import Home from '../pages/Home/Home';
+import Register from '../pages/Register/Register';
+import Login from '../pages/Login/Login';
+import Contact from '../pages/Home/sections/Contact';
+import About from '../pages/Home/sections/About';
+import Features from '../pages/Home/sections/Features';
 
 const homeRoutes = [
   {

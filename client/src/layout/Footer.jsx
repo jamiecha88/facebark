@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import GlobalStyles from '@mui/material/GlobalStyles';
-import { Grid } from '@mui/material';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Socials from '../../common/Icons/Socials';
+import { Grid, Container, Typography } from '@mui/material';
+import Socials from '../components/Socials';
 
 const theme = createTheme({
   palette: {
